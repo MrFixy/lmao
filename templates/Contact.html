@@ -78,27 +78,22 @@
           </div>
         </div>
       </section>
-
-           <button id="openChat" class="fixed bottom-4 right-4 bg-blue-500 text-white px-4 py-2 rounded-full z-10">Chat</button>
-<div id="chatWindow" class="fixed bottom-4 right-4 w-80 bg-white border rounded-lg shadow-lg hidden z-20">
-    <!-- Header with close button -->
-    <div class="bg-blue-500 text-white px-4 py-2 rounded-t-lg">
-        <span class="text-lg font-semibold">Chat with Raghav</span>
-        <button id="closeChat" class="float-right focus:outline-none">&times;</button>
-    </div>
-    <!-- Chat messages container -->
-    <div id="chatMessages" class="px-4 py-3 h-60 overflow-y-auto">
-        <!-- Chat messages will be displayed here -->
-    </div>
-    <!-- Chat input field -->
-    <div class="px-4 py-2 flex items-center">
-        <input id="chatInput" type="text" placeholder="Type a message..." class="w-full border rounded-full px-3 py-2 flex-grow">
-        <button id="sendMessage" class="bg-blue-500 text-white px-4 py-2 rounded-full ml-2">Send</button>
-    </div>
-</div>
-</div>
-<script src="chatbot.js"></script>
-
-
+<script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script>
+  window.botpressWebChat.init({
+      "composerPlaceholder": "Chat with Raghav(AI)",
+      "botConversationDescription": "This Bot is here to help u with your problems.",
+      "botId": "b43ba57b-170c-4299-b018-3bdcb889ec61",
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "b43ba57b-170c-4299-b018-3bdcb889ec61",
+      "lazySocket": true,
+      "botName": "Raghav(AI)",
+      "avatarUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsou8fSd-yO7k1rWi7mScJW0YbcHt1m8YTZQ&usqp=CAU",
+      "frontendVersion": "v1",
+      "useSessionStorage": true,
+      "enableConversationDeletion": true
+  });
+</script>
 </body>
 </html>
