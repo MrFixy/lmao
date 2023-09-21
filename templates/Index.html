@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Document</title>
+        <style type="text/css">
+            /* Reset default margin and padding for the body */
+            body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; 
+            color: white;/* Prevent page scrollbars */
+            }
+            /* Style the video container to cover the entire viewport */
+            video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Place the video behind other content */
+            }
+            /* Style the video to cover the entire container */
+        
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+   .scrollable-container {
+            max-height: 80vh; /* Adjust the max height as needed */
+            overflow-y: auto;
+        }
+        
+
+
+        </style>
+    </head>
+<body>
+<div class="video-container">
+   <<video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+<source src="indexW.mp4" type="video/mp4">
+</video>
+    </div>
+        <header class=" body-font">
+            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+                <a class="flex title-font font-medium items-center mb-4 md:mb-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-blue-500 rounded-full" viewBox="0 0 24 24">
+                        <image href="robot.png" x="0" y="0" height="100%" width="100%" />
+                    </svg>
+                    <span class="ml-3 text-xl">ChatBot</span>
+                </a>
+                <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400 flex flex-wrap items-center text-base justify-center">
+                    <a href="Index.html" class="mr-5 hover:text-gray-900">Home</a>
+                    <a href="Chat.html" class="mr-5 hover:text-gray-900">Chat</a>
+                    <a href="Contact.html" class="mr-5 hover:text-gray-900">Contact</a>
+                    <a href="About.html" class="mr-5 hover:text-gray-900">About</a>
+                </nav>
+            </div>
+        </header>
+        <div class="scrollable-container">
+        <section class=" body-font,">
+   <div class="container px-4 py-8 mx-auto">
+        <div class="text-center mb-8">
+            <h1 class="text-2xl font-medium title-font mb-4">Welcome! to ChatBot</h1>
+            <p class="text-base leading-relaxed text-gray-500">Get yourself together with the help of Kelvin.</p>
+            <div class="flex mt-4 justify-center">
+                <div class="w-16 h-1 rounded-full bg-blue-500 inline-flex"></div>
+            </div>
+        </div>
+         <!-- Added scrollable container -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+                <div class="p-4 flex flex-col text-center items-center">
+                    <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-3 flex-shrink-0">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-grow">
+                        <h2 class="text-lg title-font font-medium mb-2">Kelvin</h2>
+                        <p class="leading-relaxed text-base">Kelvin is not your typical chatbot; it's an advanced AI companion created with a deep understanding of human emotions, psychology, and therapeutic techniques. Its primary mission is to offer a helping hand to those who may be struggling with various mental health challenges.</p>
+                        <a href="#" class="mt-2 text-blue-500 inline-flex items-center">Learn More</a>
+                    </div>
+                </div>
+
+            <div class="p-4 flex flex-col text-center items-center">
+                <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-3 flex-shrink-0">
+                    <img src="Brain.png" style="border-radius: 50%; max-width: 100%;">
+                </div>
+                <div class="flex-grow">
+                    <h2 class="text-lg title-font font-medium mb-2">Mental Health</h2>
+                    <p class="leading-relaxed text-base">Good mental health is vital for overall well-being, enabling us to cope with life's challenges, build meaningful relationships, and achieve our full potential. It's important to prioritize and nurture our mental health, seeking support and resources when needed, as it has a profound impact on our quality of life.</p>
+                    <a href="#" class="mt-2 text-blue-500 inline-flex items-center">Learn More</a>
+                </div>
+            </div>
+
+            <div class="p-4 flex flex-col text-center items-center">
+                <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-3 flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                        <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </div>
+                <div class="flex-grow">
+                    <h2 class="text-lg title-font font-medium mb-2">Raghav(AI)</h2>
+                    <p class="leading-relaxed text-base">Raghav (AI) is a helpful chatbot designed to assist users when they encounter issues with the "Contact Us" web page. With a focus on improving user experience, Raghav provides solutions, guidance, and troubleshooting steps to address problems related to the contact page.</p>
+                    <a href="#" class="mt-2 text-blue-500 inline-flex items-center">Learn More</a>
+                </div>
+            </div>
+
+        </div>
+  
+        </section>
+      </div>
+    </body>
+</html>
